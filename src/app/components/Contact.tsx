@@ -28,19 +28,19 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "alex@example.com",
-      href: "mailto:alex@example.com",
+      value: "mhtdmansib@gmail.com",
+      href: "mailto:mhtdmansib@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+880 1917787999",
       href: "tel:+15551234567",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Mirpur, Dhaka",
       href: "#",
     },
   ];

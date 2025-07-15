@@ -116,7 +116,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { Code, Palette, Server, Smartphone } from "lucide-react";
+import { Code, Palette, Server, Grid2x2 } from "lucide-react";
 
 export function Skills() {
   const ref = useRef(null);
@@ -144,25 +144,25 @@ export function Skills() {
     {
       icon: Code,
       title: "Frontend Development",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"],
+      skills: ["React", "CSS", "Next.js", "Tailwind CSS", "Framer Motion"],
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: Server,
       title: "Backend Development",
-      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs"],
+      skills: ["C#","ASP.NET","Node.js", "Python", "PostgreSQL", "MySQL", "REST APIs","JAVA"],
       color: "from-green-500 to-emerald-500",
     },
     {
       icon: Palette,
       title: "UI/UX Design",
-      skills: ["Figma", "Adobe XD", "Prototyping", "User Research", "Design Systems"],
+      skills: ["Figma", "Prototyping"],
       color: "from-purple-500 to-pink-500",
     },
     {
-      icon: Smartphone,
-      title: "Mobile Development",
-      skills: ["React Native", "Flutter", "iOS", "Android", "Progressive Web Apps"],
+      icon: Grid2x2,
+      title: "Microsoft Office",
+      skills: ["Microsoft Word", "Microsoft Powerpoint", "Microsoft Excel"],
       color: "from-orange-500 to-red-500",
     },
   ];

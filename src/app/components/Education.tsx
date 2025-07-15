@@ -12,12 +12,12 @@ import { useEffect, useState } from "react";
 
 const educationData = [
   {
-    degree: "Bachelor of Computer Science",
+    degree: "Bachelor of Computer Science (BSc)",
     level: "Undergraduate",
-    institution: "University of Technology",
-    location: "City, State",
-    duration: "2020 - 2024",
-    grade: "CGPA: 3.8/4.0",
+    institution: "American International University-Bangladessh (AIUB)",
+    location: " Khilkhet, Dhaka-1229, Bangladesh",
+    duration: "2022 - Current",
+    grade: "CGPA: 3.98 out of 4.0",
     highlights: [
       "Software Engineering",
       "Data Structures",
@@ -29,21 +29,21 @@ const educationData = [
   {
     degree: "Higher Secondary Certificate (HSC)",
     level: "Higher Secondary",
-    institution: "ABC College",
-    location: "City, State",
-    duration: "2018 - 2020",
-    grade: "Grade: A+",
-    highlights: ["Science Group", "Mathematics", "Physics", "Chemistry"],
+    institution: "Bangladesh Chemical Industrial Corporation (BCIC) College",
+    location: "Zoo Road, Dhaka-1216",
+    duration: "2018 - 2021",
+    grade: "GPA: 5.00 out of 5.00",
+    highlights: ["Science Group"],
     status: "Completed",
   },
   {
     degree: "Secondary School Certificate (SSC)",
     level: "Secondary",
-    institution: "XYZ High School",
-    location: "City, State",
+    institution: "Monipur High School & College (MUBC)",
+    location: "Rupnagar R/A - Mirpur , Dhaka-1216",
     duration: "2016 - 2018",
-    grade: "Grade: A+",
-    highlights: ["Science Group", "General Studies", "English", "Mathematics"],
+    grade: "GPA: 5.00 out of 5.00",
+    highlights: ["Science Group"],
     status: "Completed",
   },
 ];
@@ -84,10 +84,12 @@ export function Education() {
           className="text-center mb-16"
         >
           <h2
-            className={`text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4`}
+            className={`text-4xl md:text-5xl font-bold mb-6 ${isDark ? "text-gray-100" : "text-gray-900"
+              }`}
           >
             Education
           </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p
             className={`text-lg max-w-2xl mx-auto ${
               isDark ? "text-gray-300" : "text-gray-600"
