@@ -40,9 +40,8 @@ export function About() {
           className="text-center mb-16"
         >
           <h2
-            className={`text-4xl md:text-5xl font-bold mb-6 ${
-              isDark ? "text-gray-100" : "text-gray-900"
-            }`}
+            className={`text-4xl md:text-5xl font-bold mb-6 ${isDark ? "text-gray-100" : "text-gray-900"
+              }`}
           >
             About Me
           </h2>
@@ -57,18 +56,16 @@ export function About() {
             className="space-y-6"
           >
             <p
-              className={`text-lg leading-relaxed ${
-                isDark ? "text-gray-300" : "text-gray-700"
-              }`}
+              className={`text-lg leading-relaxed ${isDark ? "text-gray-300" : "text-gray-700"
+                }`}
             >
-              I'm a passionate full-stack developer currently doing my undergraduation in American International 
+              I'm a passionate full-stack developer currently doing my undergraduation in American International
               University-Bangladesh (AIUB), and creating digital solutions that matter. I love turning complex problems
               into simple, beautiful, and intuitive designs.
             </p>
             <p
-              className={`text-lg leading-relaxed ${
-                isDark ? "text-gray-300" : "text-gray-700"
-              }`}
+              className={`text-lg leading-relaxed ${isDark ? "text-gray-300" : "text-gray-700"
+                }`}
             >
               When I'm not coding, you'll find me exploring new technologies,
               contributing to open-source projects, or sharing knowledge with the
@@ -86,14 +83,12 @@ export function About() {
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                   className="text-center"
                 >
-                  <div className={`text-3xl font-bold ${
-                    isDark ? "text-blue-400" : "text-blue-600"
-                  }`}>
+                  <div className={`text-3xl font-bold ${isDark ? "text-blue-400" : "text-blue-600"
+                    }`}>
                     {stat.value}
                   </div>
-                  <div className={`text-sm ${
-                    isDark ? "text-gray-400" : "text-gray-600"
-                  }`}>
+                  <div className={`text-sm ${isDark ? "text-gray-400" : "text-gray-600"
+                    }`}>
                     {stat.label}
                   </div>
                 </motion.div>
@@ -114,9 +109,8 @@ export function About() {
                            bg-gradient-to-br from-blue-500 to-purple-600 p-8"
               >
                 <div
-                  className={`rounded-xl p-6 text-center ${
-                    isDark ? "bg-gray-800 text-gray-100" : "bg-white text-gray-900"
-                  }`}
+                  className={`rounded-xl p-6 text-center ${isDark ? "bg-gray-800 text-gray-100" : "bg-white text-gray-900"
+                    }`}
                 >
                   <div className="text-6xl mb-4">🚀</div>
                   <h3 className="text-2xl font-bold mb-4">

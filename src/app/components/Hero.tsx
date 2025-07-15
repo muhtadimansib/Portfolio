@@ -136,11 +136,12 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail,Loader } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Loader } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
     const [isDark, setIsDark] = useState(false);
-    
+
 
     // ✅ Watch for changes in "dark" class on <html>
     useEffect(() => {
@@ -208,20 +209,16 @@ export function Hero() {
                     </motion.div> */}
 
                     <div className="w-40 h-40 md:w-70 md:h-70 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-500">
-                        <img
-                            src="/Images/profile.jpg"
-                            alt="Profile"
-                            className="w-full h-full object-cover"
-                        />
+                        <Image src="/my-image.jpg" alt="Something"  className="w-full h-full object-cover" width={500} height={300} />
                     </div>
 
 
-<h1 className="typewriter text-4xl md:text-6xl lg:text-7xl font-bold">
-  Hi, I'm{" "}
-  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-    Muhtadi Mansib
-  </span>
-</h1>
+                    <h1 className="typewriter text-4xl md:text-6xl lg:text-7xl font-bold">
+                        Hi, I'm{" "}
+                        <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                            Muhtadi Mansib
+                        </span>
+                    </h1>
 
                     <motion.p
                         variants={itemVariants}
