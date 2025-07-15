@@ -191,26 +191,10 @@ export function Hero() {
                     animate="visible"
                     className="space-y-8"
                 >
-                    {/* <motion.div variants={itemVariants} className="relative inline-block">
-                        <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-8">
-                            <motion.div
-                                animate={{ rotate: 360 }}
-                                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                                className="w-full h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1"
-                            >
-                                <div
-                                    className={`w-full h-full rounded-full flex items-center justify-center text-9xl 
-                                    ${isDark ? "bg-gray-700" : "bg-gray-200"}`}
-                                >
-                                    <Loader size={96} /> 
-                                </div>
-                            </motion.div>
-                        </div>
-                    </motion.div> */}
 
                     <div className="w-40 h-40 md:w-70 md:h-70 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-500">
                         <Image
-                            src="/Images/profile.JPG" 
+                            src="/Images/profile.jpg" 
                             alt="Profile picture"
                             width={500}
                             height={500}
