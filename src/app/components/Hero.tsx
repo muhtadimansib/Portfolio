@@ -209,7 +209,7 @@ export function Hero() {
                     </motion.div> */}
 
                     <div className="w-40 h-40 md:w-70 md:h-70 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-500">
-                        <Image src="/my-image.jpg" alt="Something"  className="w-full h-full object-cover" width={500} height={300} />
+                        <Image src="/Images/profile.jpg" alt="Something"  className="w-full h-full object-cover" width={500} height={300} />
                     </div>
 
 
