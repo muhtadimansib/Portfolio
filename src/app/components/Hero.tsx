@@ -210,7 +210,7 @@ export function Hero() {
 
                     <div className="w-40 h-40 md:w-70 md:h-70 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-500">
                         <Image
-                            src="/Images/profile.jpg" // ✅ Correct path for public folder
+                            src="/Images/profile.JPG" 
                             alt="Profile picture"
                             width={500}
                             height={500}
