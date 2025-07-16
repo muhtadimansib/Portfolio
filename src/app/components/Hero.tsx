@@ -194,7 +194,7 @@ export function Hero() {
 
                     <div className="w-40 h-40 md:w-70 md:h-70 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-500">
                         <Image
-                            src="/profile.jpg" 
+                            src="/profile.jpg"
                             alt="Profile picture"
                             width={500}
                             height={500}
@@ -246,14 +246,19 @@ export function Hero() {
                         variants={itemVariants}
                         className="flex justify-center space-x-6"
                     >
-                        {[Github, Linkedin, Mail].map((Icon, index) => (
+                        {[
+                            { icon: Github, link: "https://github.com/muhtadimansib" },
+                            { icon: Linkedin, link: "https://www.linkedin.com/in/muhtadi-mansib-9336192a1/" },
+                        ].map(({ icon: Icon, link }, index) => (
                             <motion.a
                                 key={index}
-                                href="#"
+                                href={link}
+                                target="_blank" 
+                                rel="noopener noreferrer"
                                 whileHover={{ scale: 1.2, rotate: 5 }}
                                 whileTap={{ scale: 0.9 }}
                                 className={`p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-200 
-                                           ${isDark ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"}`}
+                 ${isDark ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"}`}
                             >
                                 <Icon className="h-6 w-6" />
                             </motion.a>

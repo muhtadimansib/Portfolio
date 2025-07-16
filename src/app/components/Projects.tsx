@@ -42,7 +42,7 @@
 //             github: "#",
 //             live: "#",
 //         },
-        
+
 //     ];
 
 //     return (
@@ -150,7 +150,7 @@ export function Projects() {
   const isInView = useInView(ref, { once: true });
   const [isDark, setIsDark] = useState(false);
 
-  // ✅ Watch for changes in the <html> classList (dark mode toggle)
+
   useEffect(() => {
     const observer = new MutationObserver(() => {
       setIsDark(document.documentElement.classList.contains("dark"));
@@ -169,37 +169,38 @@ export function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "#",
+      title: "Fitness Tracking (Admin Module)",
+      description: "A scalable fitness tracking backend system with AI-driven insights, modular messaging, and role-based access control for enhanced user engagement and professional support",
+      image: "./FitnessTracking.jpeg",
+      tech: ["React", "Node.js", "PostgrSQL", "Postman", "Next.js", "Typescript", "Nest.js", "API together"],
+      github: "https://github.com/muhtadimansib/FItTrack_Admin_module",
       live: "#",
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-      tech: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-      github: "#",
+      title: "Delivery Management App (Dropify)",
+      description: "A secure desktop-based courier management system with dynamic booking, payment, and tracking features, built using .NET and MSSQL.",
+      image: "./Dropify.jpeg",
+      tech: ["C#", ".NET Framework", "MSSQL","Winforms"],
+      github: "https://github.com/muhtadimansib/Dropify",
+      live: "#",
+    },
+        {
+      title: "Learning Management System",
+      description: "A Learning Management System using .NET and MSSQL with REST APIs, 3-tier architecture, and core features like student enrollment and course tracking.",
+      image: "./LMS.jpeg",
+      tech: ["C#", "ASP.NET", "MVC", "Postman","MSSQL"],
+      github: "https://github.com/muhtadimansib/Learning_Management_System",
       live: "#",
     },
     {
-      title: "Weather Dashboard",
-      description: "Beautiful weather dashboard with location-based forecasts and charts",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      tech: ["React", "D3.js", "OpenWeather API", "CSS3"],
-      github: "#",
+      title: " Gas Detection System",
+      description: "A real-time gas and smoke detection system with alert mechanisms and C# interface ",
+      image: "./Gas Detection.jpeg",
+      tech: ["C", "Arduino", "C#", "Winform", "Proteus"],
+      github: "https://github.com/muhtadimansib/Gas_Sensor_Arduino_C-",
       live: "#",
     },
-    {
-      title: "Social Media App",
-      description: "A modern social media platform with real-time messaging and posts",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-      tech: ["React Native", "Firebase", "Redux", "Expo"],
-      github: "#",
-      live: "#",
-    },
+
   ];
 
   return (
@@ -254,15 +255,18 @@ export function Projects() {
                 >
                   <div className="flex space-x-4">
                     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                      <button
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={`flex items-center px-3 py-1 rounded-md text-sm transition-colors duration-200
-                                    ${isDark
-                                      ? "bg-gray-700 text-gray-200 hover:bg-gray-600"
-                                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
+                ${isDark
+                            ? "bg-gray-700 text-gray-200 hover:bg-gray-600"
+                            : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
                       >
                         <Github className="h-4 w-4 mr-2" />
                         Code
-                      </button>
+                      </a>
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                       <button
@@ -292,8 +296,8 @@ export function Projects() {
                       key={tech}
                       className={`px-3 py-1 text-sm rounded-full
                                   ${isDark
-                                    ? "bg-gray-700 text-gray-300"
-                                    : "bg-blue-100 text-blue-800"}`}
+                          ? "bg-gray-700 text-gray-300"
+                          : "bg-blue-100 text-blue-800"}`}
                     >
                       {tech}
                     </span>
