@@ -8,7 +8,7 @@ export function Contact() {
   const isInView = useInView(ref, { once: true });
   const [isDark, setIsDark] = useState(false);
 
-  // ✅ Detect dark mode toggle on <html>
+  //Detect dark mode toggle on <html>
   useEffect(() => {
     const observer = new MutationObserver(() => {
       setIsDark(document.documentElement.classList.contains("dark"));
