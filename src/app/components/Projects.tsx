@@ -129,6 +129,7 @@ export function Projects() {
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                       <button
+                        onClick={() => window.open(project.live, "_blank", "noopener,noreferrer")}//noopener for security purpose and noreferrer for privacy purpose
                         className="flex items-center px-3 py-1 rounded-md bg-blue-600 text-white hover:bg-blue-700 text-sm transition-colors duration-200"
                       >
                         <ExternalLink className="h-4 w-4 mr-2" />
