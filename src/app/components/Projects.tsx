@@ -33,7 +33,7 @@ export function Projects() {
       image: "./FitnessTracking.jpeg",
       tech: ["React", "Node.js", "PostgrSQL", "Postman", "Next.js", "Typescript", "Nest.js", "API together"],
       github: "https://github.com/muhtadimansib/FItTrack_Admin_module",
-      live: "#",
+      live: "https://f-it-track-admin-module-sigma.vercel.app",
     },
     {
       title: "Delivery Management App (Dropify)",
