@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Loader } from "lucide-react";
 import Image from "next/image";
+import { ProjectsModal } from "./ProjectsModal";
 
 export function Hero() {
     const [isDark, setIsDark] = useState(false);
+    const [isProjectsOpen, setIsProjectsOpen] = useState(false);
 
 
-    // Watch for changes in "dark" class on <html>
     useEffect(() => {
         const observer = new MutationObserver(() => {
             setIsDark(document.documentElement.classList.contains("dark"));
@@ -95,11 +96,11 @@ export function Hero() {
                         </motion.div>
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                             <button
-                                className={`flex items-center px-4 py-2 rounded-md border
-                                           ${isDark
-                                        ? "border-gray-500 text-gray-300 hover:bg-gray-800"
-                                        : "border-gray-300 text-gray-700 hover:bg-gray-100"}
-                                           transition-colors duration-200 text-lg`}
+                                onClick={() => setIsProjectsOpen(true)} // ⬅ Open modal
+                                className={`flex items-center px-4 py-2 rounded-md border ${isDark
+                                    ? "border-gray-500 text-gray-300 hover:bg-gray-800"
+                                    : "border-gray-300 text-gray-700 hover:bg-gray-100"
+                                    } transition-colors duration-200 text-lg`}
                             >
                                 View My Work
                             </button>
@@ -117,7 +118,7 @@ export function Hero() {
                             <motion.a
                                 key={index}
                                 href={link}
-                                target="_blank" 
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.2, rotate: 5 }}
                                 whileTap={{ scale: 0.9 }}
@@ -131,7 +132,8 @@ export function Hero() {
 
                     <motion.div
                         variants={itemVariants}
-                        animate={{ y: [0, 15, 0] }}
+                        animate={isProjectsOpen ? {} : { y: [0, 15, 0] }}
+
                         transition={{ duration: 1, repeat: Infinity }}
                         className="pt-8"
                     >
@@ -141,7 +143,11 @@ export function Hero() {
                     </motion.div>
                 </motion.div>
             </div>
+            {/* Modal */}
+            <ProjectsModal isOpen={isProjectsOpen} onClose={() => setIsProjectsOpen(false)} />
         </section>
     );
 }
+
+
 
