@@ -18,12 +18,12 @@ const Index = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <Hero />
-        <About />
-        <Education />
-        <Skills />
-        <Projects />
-        <Contact />
+        <section id="home"><Hero /></section>
+        <section id="about"><About /></section>
+        <section id="education"><Education /></section>
+        <section id="skills"><Skills /></section>
+        <section id="projects"><Projects /></section>
+        <section id="contact"><Contact /></section>
       </motion.div>
     </div>
   );
