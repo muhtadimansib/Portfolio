@@ -15,6 +15,7 @@ export function Badge({ className, variant = "default", ...props }: BadgeProps) 
     <span
       className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${variants[variant]} ${className}`}
       {...props}
+      // {...props}
     />
   );
 }
