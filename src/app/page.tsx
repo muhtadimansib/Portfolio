@@ -19,6 +19,7 @@ const Index = () => {
         transition={{ duration: 0.8 }}
       >
         <section id="home"><Hero /></section>
+        {/* <section id="home"><Hero /></section> */}
         <section id="about"><About /></section>
         <section id="education"><Education /></section>
         <section id="skills"><Skills /></section>
